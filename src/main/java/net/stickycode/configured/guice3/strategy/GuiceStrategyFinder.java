@@ -7,19 +7,17 @@ import java.util.Set;
 
 import javax.inject.Inject;
 
-import net.stickycode.configured.strategy.StrategyFinder;
-import net.stickycode.configured.strategy.StrategyNotFoundException;
-import net.stickycode.stereotype.StickyComponent;
-import net.stickycode.stereotype.StickyFramework;
-
 import com.google.inject.Binding;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
 import com.google.inject.util.Types;
 
+import net.stickycode.configured.strategy.StrategyFinder;
+import net.stickycode.configured.strategy.StrategyNotFoundException;
+import net.stickycode.stereotype.StickyComponent;
+
 @StickyComponent
-@StickyFramework
 public class GuiceStrategyFinder
     implements StrategyFinder {
 
